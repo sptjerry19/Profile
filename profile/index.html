@@ -21,10 +21,14 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/39dda8b4a5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section style="display: flex; justify-content: center">
-      <div class="nav_bar w-75 shadow p-3 mb-5 bg-body rounded">
+      <div class="nav_bar w-75 shadow p-3 mb-2 bg-body rounded">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Profile</a>
@@ -58,13 +62,19 @@
                     Dropdown
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#container">Profile</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://www.topcv.vn/p/duy-linh-pham-6634648?isView=1"
+                        >Another Profile</a
+                      >
                     </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#music_app">Music App</a>
                     </li>
                   </ul>
                 </li>
@@ -109,18 +119,11 @@
         >
           <div
             class="carousel-inner"
-            style="height: 300px; display: flex; align-items: center"
+            style="height: 400px; display: flex; align-items: center"
           >
             <div class="carousel-item active">
               <img
-                src="./image/wallpaperflare.com_wallpaper (12).jpg"
-                class="d-block mw-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./image/wallpaperflare.com_wallpaper (14).jpg"
+                src="./image/profile-logo-svg-vector.svg"
                 class="d-block mw-100"
                 alt="..."
               />
@@ -128,6 +131,13 @@
             <div class="carousel-item">
               <img
                 src="./image/wallpaperflare.com_wallpaper (2).jpg"
+                class="d-block mw-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./image/wallpaperflare.com_wallpaper (12).jpg"
                 class="d-block mw-100"
                 alt="..."
               />
@@ -154,7 +164,80 @@
         </div>
       </div>
     </section>
-    <div id="content"></div>
+    <div id="container">
+      <div id="content" class="w-75 shadow-lg">
+        <div class="avatar_information mt-3 w-25">
+          <div class="avatar">
+            <img
+              class="avatar_image shadow-lg w-50"
+              src="./image/cv.jpg"
+              alt=""
+            />
+            <h4 class="mt-2 mb-2">Phạm Duy Linh</h4>
+          </div>
+          <div class="info_avatar">
+            <p><i class="fa-solid fa-phone"></i>0866612543</p>
+            <p><i class="fa-solid fa-cake-candles"></i>14/11/2003</p>
+            <p><i class="fa-solid fa-venus-mars"></i>male</p>
+            <p><i class="fa-solid fa-envelope"></i>duylinhvnu@gmail.com</p>
+            <p>
+              <i class="fa-solid fa-share-nodes"></i
+              >https://www.facebook.com/profile.php?id=100058441982148
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Đông Ngạc-Bắc Từ Liêm-Hà
+              Nội
+            </p>
+          </div>
+        </div>
+        <div class="information_frofile">
+          <div class="label_info">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Học vấn</h3>
+          </div>
+          <ul class="list_school">
+            <li class="school">Trường đại học Công nghệ - ĐHQGHN</li>
+            <li class="school">Vật lý kỹ thuật</li>
+            <li class="school">
+              Hiện đang là sinh viên năm 3, đã làm 1 số bài tập lớn theo team
+              như: code game, chế tạo 1 số thiệt bị điện tử
+            </li>
+          </ul>
+          <!--  -->
+          <div class="label_info">
+            <i class="fa-regular fa-star"></i>
+            <h3>Kỹ năng</h3>
+          </div>
+          <ul class="list_school">
+            <li class="school">Tìm kiếm và chọn lọc thông tin</li>
+            <li class="school">Ngôn ngữ lập trình: C++, JS, PHP</li>
+            <li class="school">Framework: Laravel, reactJs</li>
+          </ul>
+          <!--  -->
+          <div class="label_info">
+            <i class="fa-solid fa-book-tanakh"></i>
+            <h3>Chứng chỉ</h3>
+          </div>
+          <ul class="list_school">
+            <li class="school">chứng chỉ Javascript trên topCV</li>
+            <li class="school">chứng chỉ Javascript, html, css tại F8</li>
+          </ul>
+          <div class="label_info">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <h3>Sở thích</h3>
+          </div>
+          <ul class="list_school">
+            <li class="school">Thể thao</li>
+            <li class="school">Chơi game</li>
+            <li class="school">Nghe nhạc</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="music_app">
+      <p>This is my app music</p>
+      <i>Sắp ra mắt</i>
+    </div>
     <footer></footer>
   </body>
 </html>
